@@ -1,0 +1,37 @@
+{
+  "id": "2138115",
+  "name": "科沃斯",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "8145817",
+      "name": "箭头",
+      "font_class": "jiantou",
+      "unicode": "e663",
+      "unicode_decimal": 58979
+    },
+    {
+      "icon_id": "10707278",
+      "name": "箭头 左 left",
+      "font_class": "jiantouzuo",
+      "unicode": "e61c",
+      "unicode_decimal": 58908
+    },
+    {
+      "icon_id": "14475141",
+      "name": "箭头",
+      "font_class": "jiantou1",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "17498907",
+      "name": "箭头",
+      "font_class": "jiantou2",
+      "unicode": "e63c",
+      "unicode_decimal": 58940
+    }
+  ]
+}

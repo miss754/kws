@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.x.x/css/swiper.min.css"> -->
+    <link rel="stylesheet" href="../css/swiper.min.css">
+</head>
+<body>
+    
+    <script src="../js/swiper.min.js"></script>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="https://static.ecovacs.cn//upload/index_img/2020/10/12/index_img_16024819337460.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="https://static.ecovacs.cn//upload/index_img/2020/10/15/index_img_16027523415088.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="https://static.ecovacs.cn//upload/index_img/2020/10/12/index_img_16024819534426.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="https://static.ecovacs.cn//upload/index_img/2020/10/12/index_img_16024819957418.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="https://static.ecovacs.cn//upload/index_img/2020/09/25/index_img_16010037624747.jpg" alt="">
+            </div>
+        </div>
+        
+    <div class="swiper-pagination"></div>
+    </div>
+
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <!-- <script src="../js/swiper-bundle.min.js"></script> -->
+    <script src="../jquery/jquery.js"></script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.x.x/js/swiper.jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.x.x/js/swiper.min.js"></script> -->
+ 
+    <script>
+            var mySwiper = new Swiper('.swiper-container', {
+    autoplay: {
+        delay: 1000, //3秒切换一次
+    },
+    //分页器
+    pagination: {
+        el: '.swiper-pagination',
+        //点击分页器可以切换图片
+        clickable: true,
+
+    },
+    //左右切换按钮
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    //一直循环切换
+    loop: true,
+    loopAdditionalSlides: 3,
+
+
+});
+
+
+
+//如果你开启了clickable， 还可以鼠标划过按钮切换到指定的图片
+for (i = 0; i < mySwiper.pagination.bullets.length; i++) {
+    mySwiper.pagination.bullets[i].onmouseover = function() {
+        this.click();
+    };
+}
+
+//鼠标移入停止播放
+mySwiper.el.onmouseover = function() {
+    mySwiper.autoplay.stop();
+}
+
+//鼠标离开开始自动切换
+mySwiper.el.onmouseout = function() {
+    mySwiper.autoplay.start();
+}
+    </script>
+</body>
+</html>

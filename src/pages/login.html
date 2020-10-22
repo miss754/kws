@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/longin.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <img src="https://static.ecovacs.cn/p/images/logo/default.png" alt="">
+        </div>
+    </div>
+    <div class="banner">
+       <!--  <a href="#" style="background-image: url(https://static.ecovacs.cn/upload/link/2020/10/15/link_16027525284097.jpg);"></a> -->
+        <div class="login" >
+            <ul>
+                <li class="active">账号密码登陆</li>
+                <li >手机快捷登陆</li>
+            </ul>
+            <ol>
+                <li class="active">
+                    <form action="#"> 
+                        <p>
+                            <input type="text" name="user" id="" placeholder="科沃斯账号/手机">
+                        </p>
+                        <p>
+                            <input type="password" name="pass" id="" placeholder="登陆密码">
+                        </p>
+                        <p>
+                            <button type="button" class="but">登陆</button>
+                        </p>
+                    </form>
+                    <p>
+                        <a href="#">立即注册</a>
+                        <span></span>
+                        <a href="#">忘记密码</a>
+                    </p>
+                </li>
+                
+                <li>
+                    <form action="#"> 
+                        <p>
+                            <input type="text" name="user" placeholder="请输入11位手机好">
+                        </p>
+                        <p>
+                            <input type="password" name="pass" class="inpt" placeholder="请输入手机验证码">
+                            <button type="button" class="btn">发送验证码</button>
+                        </p>
+                        <p>
+                            温馨提示：未注册的手机号，登录时将自动注册，且代表您已同意<a href="#">《用户注册协议》</a>
+                        </p>
+                        <p>
+                            <button type="button" class="but">登陆</button>
+                        </p>
+                    </form>
+                    <p>
+                        <a href="#">立即注册</a>
+                        <span></span>
+                        <a href="#">忘记密码</a>
+                    </p>
+                </li>
+            </ol>
+        </div>
+    </div>
+    <script src="../lib/jquery.min.js"></script>
+    <script>
+        $('ul>li').click(function(){
+            $(this)
+            .addClass('active')
+            .siblings() // li的所有兄弟
+            .removeClass('active')
+            .parent() //找到父元素ul
+            .next()  //ul的下个兄弟元素ol
+            .children() //ol下面所有子元素li
+            .removeClass('active')
+            .eq($(this).index()) //找到索引和我点击的li对应的那一个
+            .addClass('active') //添加类名
+        })
+    </script>
+
+
+    <!-- ----------site-footer-------- -->
+    <div class="site-footer">
+        <div class="container">
+            <div class="service">
+                <ul>
+                    <li>
+                        <i class="iconfont icon-zhengpinbaozhang2"></i>
+                        <b>官方品质保证</b>
+                    </li>
+                    <li>
+                        <i class="iconfont icon-tuihuanhuo"></i>
+                        <b>7天无理由换货</b>
+                    </li>
+                    <li>
+                        <i class="iconfont icon-baoyou"></i>
+                        <b>全场满99包邮</b>
+                    </li>
+                    <li>
+                        <i class="iconfont icon-huiyuanzhongxin"></i>
+                        <b>售后网点 全国覆盖</b>
+                    </li>
+                </ul>
+            </div>
+            <div class="links">
+                <div class="links-left">
+                    <dl>
+                        <dt>购物相关</dt>
+                        <dd><a href="#">购物指南</a></dd>
+                        <dd><a href="#">支付方式</a></dd>
+                        <dd><a href="#">配送方式</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>售后支持</dt>
+                        <dd><a href="#">售后服务政策</a></dd>
+                        <dd><a href="#">退换货政策</a></dd>
+                        <dd><a href="#">常见问题</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>关于我们</dt>
+                        <dd><a href="#">新浪微博</a></dd>
+                        <dd><a href="#">会员制度</a></dd>
+                        <dd><a href="#">加入我们</a></dd>
+                        <dd><a href="#">廉洁监督</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>关于我们</dt>
+                        <dd><a href="#">关于科沃斯</a></dd>
+                        <dd><a href="#">社会责任</a></dd>
+                        <dd><a href="#">练习我们</a></dd>
+                    </dl>
+                </div>
+                <div class="links-right">
+                    <img src="https://static.ecovacs.cn/upload/image/20200512/20200512094755_38218.png" alt="">
+                </div>
+                <div class="concate">
+                    <p>400-886-8888</p>
+                    <p>周一至周日 9:00-20:00</p>
+                    <a href="#">在线客服</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyRight">
+            <p>
+                Copyright ©2014-2020 科沃斯机器人版权所有 
+                苏ICP备14049145号-1 &nbsp;  ICP证：苏B1-20140152
+                营业执照
+                <img src="https://www.beian.suzhou.gov.cn/resources/images/marker/szicbok.gif" alt="">
+             </p>
+        </div>
+    </div>
+
+    <script src="../js/ajax2.js"></script>
+    <script src="../js/cookie.js"></script>
+    <script src="../js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+*{
+    padding: 0px; margin: 0px;
+}
+a{
+    text-decoration: none; color: #333;
+}
+a:hover{
+    color: red;
+}
+ul li ,ol li{
+    list-style: none;
+}
+
+body{
+    background-color: #f2f2f2;
+    font-size: 14px;
+}
+.container{
+    width: 660px;
+    /* height: 800px; */
+    margin: 60px auto;
+    background-color: white;
+}
+.container .reglogin{
+    width: 360px;
+    padding: 50px;
+    margin: 0 auto;
+    
+}
+.reglogin .logo{
+    display: block;
+    width: 100%; height: 50px;
+    text-align: center;
+    cursor: pointer;
+    background: url(../images/register_03.png) no-repeat center;
+    background-size: contain;
+}
+.reglogin h2{
+    padding-top: 30px;
+    padding-bottom: 50px;
+    text-align: center;
+    font-size: 24px;
+    color: #666;
+}
+
+
+.reglogin p{
+    
+    padding-bottom: 20px;
+    
+}
+.reglogin input{
+    width: 350px; 
+    height: 50px;
+    border: 1px solid #c4c1c1;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.reglogin button{
+    width: 360px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: #f1f1f1;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+}
+.reglogin span{
+    padding-top: 10px;
+    color: red;
+    font-size: 16px;
+}
+.reglogin .item>input{
+    width: 15px;
+    height: 15px;
+}
+.reglogin .item>a{
+    font-size: 16px;
+    font-weight: bolder;
+}
+.reglogin .text{
+    width: 360px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    text-align: center;
+}

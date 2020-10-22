@@ -1,0 +1,43 @@
+
+*{
+    padding: 0px; 
+    margin: 0px;
+}
+.container{
+    width: 1220px; margin: 0px auto;
+    /* line-height: 40px; overflow: hidden; */ 
+    font-size: 14px;
+}
+h1{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+}
+
+table,div{
+    display: none;
+    
+}
+table thead{
+    border-bottom: 2px solid skyblue;
+}
+table thead tr th{
+    font-size: 26px;
+    height: 40px;
+    color: #636363;
+}
+table tr td{
+    text-align: center;
+}
+img{
+    width: 70px;
+    height: 70px;
+}
+span{
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    background-color: slategrey;
+    cursor: pointer;
+}

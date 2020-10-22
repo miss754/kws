@@ -1,0 +1,191 @@
+*{
+    padding: 0px; margin: 0px;
+}
+a{
+    text-decoration: none; color: #333;
+}
+a:hover{
+    color: red;
+}
+ul li ,ol li{
+    list-style: none;
+}
+.container{
+    width: 1220px; margin: 0px auto;
+    /* line-height: 40px; overflow: hidden; */ 
+    font-size: 14px;
+}
+.header{
+    width: 100%;
+}
+.header img{
+    width: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.banner{
+    background-image: url(https://static.ecovacs.cn/upload/link/2020/10/15/link_16027525284097.jpg);
+    width: 100%; height: 590px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.banner .login{
+    width: 400px;
+    box-sizing: border-box;
+    padding: 30px;
+    position: absolute;
+    top: 50px; right: 60px;
+    background-color: #f8f8f8;
+}
+.banner .login ul{
+    overflow: hidden;
+    border-bottom: 1px solid gray;
+}
+.banner .login ul>li{
+    float: left;
+    width: 50%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+.banner .login ul li.active{
+    color: red;
+}
+.banner .login ol li{
+    display: none;
+}
+.banner .login ol li.active{
+    display: block;
+}
+.banner .login p{
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.banner .login input{
+    outline: none;
+    width: 285px; 
+    height: 40px;
+    border: 1px solid #333;
+    font-size: 16px;
+    padding-left: 10px;
+}
+.banner .login .inpt{
+    width: 150px;
+}
+.banner .login button{
+    width: 295px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: #f1f1f1;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+}
+.banner .login button:hover{
+    color: red;
+}
+.banner .login .btn{
+    width: 100px;
+    margin-left: 20px;
+    font-size: 14px;
+}
+.banner .login a:nth-of-type(1){
+    margin-left: 80px;
+}
+.banner .login span{
+    display: inline-block;
+    width: 2px; height: 16px;
+    background-color: grey;
+    margin: 0 5px;
+}
+
+
+
+/* ------site-footer------ */
+.site-footer .service{
+    padding: 30px 0;
+}
+.site-footer .service ul{
+    overflow: hidden;
+}
+.site-footer .service ul li{
+    width: 25%;
+    float: left;
+    color: #616161;
+    
+}
+.site-footer .service ul li i{
+    float: left;
+    margin-left: 40px;
+    font-size: 45px;
+}
+.site-footer .service ul li b{
+    float: left;
+    margin-left: 10px;
+    font-size: 16px;
+    display: inline-block;
+    height: 45px; 
+    line-height: 45px;
+}
+.site-footer .links{
+    padding: 35px 0;
+    overflow: hidden;
+}
+.site-footer .links .links-left{
+    overflow: hidden;
+    float: left;
+}
+.site-footer .links .links-left dl{
+    width: 161px; float: left;
+    text-align: left;
+}
+.site-footer .links .links-left dl dt{
+    font-size: 14px; 
+    padding-bottom: 15px;
+    color: #3a3a3a;
+}
+.site-footer .links .links-left dl dd{
+    font-size: 12px; 
+    padding-bottom: 5px;
+}
+.site-footer .links .links-right{
+    
+    float: left;
+    margin-left: 50px;
+}
+.site-footer .links .concate{
+    float: right;
+}
+.site-footer .links .concate p:nth-of-type(1){
+    font-size: 20px; color: red;
+    padding-bottom: 5px;
+}
+.site-footer .links .concate p:nth-of-type(2){
+    font-size: 12px; 
+    padding-bottom: 10px;
+}
+.site-footer .links .concate a{
+    display: block; 
+    width: 150px; height: 30px;
+    border: 1px solid red;
+    border-radius: 3px;
+    line-height: 30px;
+    text-align: center;
+}
+/* .site-footer .copyRight{
+    overflow: hidden;
+} */
+.site-footer .copyRight p{
+    font-size: 14px;
+   text-align: center; 
+}
+.site-footer .copyRight img{
+    width: 30px;
+    vertical-align: middle;
+    
+}
